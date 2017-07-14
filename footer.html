@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>底部</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<div class="footer_warp">
+			<div class="footer">
+				<div class="music">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="copyright">
+					copyright:蜀ICP备20170511号
+				</div>
+			</div>
+			<div class="music_content">
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.7.2.min.js " type="text/javascript " charset="utf-8 "></script>
+	<script src="js/move.js " type="text/javascript " charset="utf-8 "></script>
+	<script type="text/javascript">
+		$(".music>span").hover(function(){
+			$(this).css({
+				"background-position-y":-57,
+				"animation":"su-pudding 1s linear 1 running",
+				"transition":".5s animation"
+			})
+		},function(){
+			$(this).css({
+				"background-position-y":0,
+				"animation":""
+			})
+		})
+		$(".music>span").click(function(){
+			var music = $("<audio src='music/sound0"+$(this).index()+".mp3' autoplay hidden></audio>");
+			$(".music_content").append(music);
+			setTimeout(function(){
+				music.remove();
+			},3000)
+		})
+		
+	</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>头部</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	</head>
+	<body>
+		<div class="warp">
+			<div class="header">
+				<div class="log">
+					<a href="#"><img src="img/logo.png"/></a>
+				</div>
+				<div class="nav">
+					<ul class="nav_header">
+						<li onclick="window.location='index.html'">首页</li>
+						<li>小鸟掌学<span class="xiaojiantou"></span>
+							<ul class="nav_hide">
+								<li onclick="window.location='aboutxiaoniao.html'">小鸟掌学主页</li>
+								<li onclick="window.location='aboutxiaoniao.html?COUNT=0'">小鸟掌学概述</li>
+								<li onclick="window.location='aboutxiaoniao.html?COUNT=1'">对企业的价值</li>
+								<li onclick="window.location='aboutxiaoniao.html?COUNT=2'">小鸟掌云</li>
+								<li onclick="window.location='aboutxiaoniao.html?COUNT=3'">微课联盟</li>
+								<li onclick="window.location='aboutxiaoniao.html?COUNT=3'">App下载</li>
+							</ul>
+						</li>
+						<li onclick="window.location='list.html?type=xiaoniaoNews'">小鸟动态</li>
+						<li>企业文化<span class="xiaojiantou"></span>
+							<ul class="nav_hide">
+								<li onclick="window.location='article.html?type=companyIdea'">公司理念</li>
+								<li onclick="window.location='article.html?type=companyCulture'">公司文化</li>
+								<li onclick="window.location='article.html?type=companyEnvironment'">公司氛围</li>
+							</ul>
+						</li>
+						<li>人力资源<span class="xiaojiantou"></span>
+							<ul class="nav_hide">
+								<li onclick="window.location='article.html?type=talents'">人才理念</li>
+								<li onclick="window.location='article.html?type=team'">团队介绍</li>
+								<li onclick="window.location='article.html?type=joinUs'">招聘信息</li>
+							</ul>
+						</li>
+						<li onclick="window.location='article.html?type=telUs'">联系我们</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".nav_header>li").hover(function(){
+				$(this).find(".nav_hide").stop().slideDown(1000,'elasticOut');
+			},function(){
+				$(this).find(".nav_hide").stop().slideUp(50);
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+#header {
+  height: 120px;
+}
+#footer {
+  height: 348px;
+}
+#content_warp {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: center;
+}
+#content_warp > h1 {
+  font-size: 54px;
+  color: #311759;
+}
+#content_warp > h2 {
+  font-size: 18px;
+  color: #311759;
+  letter-spacing: 6px;
+}
+#content_warp > h3 {
+  text-align: left;
+  color: #311759;
+  line-height: 60px;
+  font-size: 30px;
+  position: relative;
+  background: url(../img/pen_line_long.png) no-repeat 0 58px;
+  margin-bottom: 50px;
+}
+#content_warp > h3 > span {
+  position: absolute;
+  width: 61px;
+  height: 58px;
+  background: url(../img/pen_list.png) no-repeat;
+  right: 0px;
+  top: 7px;
+  cursor: pointer;
+}
+#content_warp > h3 > span:hover {
+  background-position: -61px 0;
+}
+#content_warp > img {
+  clear: both;
+  display: block;
+  margin: 15px auto 15px auto;
+}
+#content_warp > .list_more {
+  height: 58px;
+  width: 58px;
+  background: url(../img/lis_more_btn_bg.png) no-repeat 0 -58px;
+  margin: 0 auto 130px;
+  cursor: pointer;
+}
+#content_warp > .list_more:hover {
+  background-position: 0 0;
+  transition: all .3s ease;
+}
+.con_footer {
+  width: 100%;
+  height: 33px;
+  min-width: 1100px;
+  background: url(../img/map_bottomimg.png) top center no-repeat;
+}
+.list_content {
+  min-height: 500px;
+}
+.content_one:hover .list_img_over_xiaojiantou {
+  transition: all 0.3s ease 0s;
+  top: 36px;
+  left: 50px;
+}
+.content_one {
+  width: 500px;
+  height: 202px;
+  float: left;
+  background: #fff;
+  padding: 36px 0 0 20px;
+  margin: 0 20px 30px 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  position: relative;
+}
+.content_one .list_img_over_xiaojiantou {
+  position: absolute;
+  left: 0px;
+  top: 36px;
+}
+.content_one:hover {
+  border-color: #86759e;
+  transform: translateY(-6px);
+  transition: all 0.3s ease 0s;
+}
+.content_one .img_wrap {
+  height: 168px;
+  width: 260px;
+  overflow: hidden;
+  float: left;
+  margin-right: 17px;
+}
+.content_one .img_wrap img {
+  width: 260px;
+}
+.content_one .content_text {
+  width: 221px;
+  float: left;
+}
+.content_one .title_small {
+  font-size: 20px;
+  color: #454548;
+  line-height: 26px;
+  max-height: 53px;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.content_one .date {
+  color: #6b6a6f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding-top: 2px;
+}
+.content_one p {
+  padding-top: 8px;
+  color: #47464a;
+  line-height: 25px;
+  max-height: 75px;
+  overflow: hidden;
+  font-family: KaiTi_GB2312;
+  letter-spacing: 0px;
+}
